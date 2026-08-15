@@ -1,0 +1,20 @@
+Begin Object Class=/Script/Engine.MaterialInstanceConstant Name="bottle_water"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_4"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_4"
+   End Object
+   ParameterStateId=8C07E43444C555654A9ACB9B7719A351
+   Parent=Material'"/Game/Objects/Materials/Base/base_m.base_m"'
+   ScalarParameterValues(0)=(ParameterName="metallic_param",ParameterInfo=(Name="metallic_param"),ExpressionGUID=0D4FF974452D7217FAC78C88C4D63B96)
+   ScalarParameterValues(1)=(ParameterName="roughness_param",ParameterInfo=(Name="roughness_param"),ParameterValue=1.232197,ExpressionGUID=AF550BDE468880ABA447A0A27C51582F)
+   ScalarParameterValues(2)=(ParameterName="RefractionDepthBias",ParameterInfo=(Name="RefractionDepthBias"))
+   TextureParameterValues(0)=(ParameterName="Diffuse",ParameterInfo=(Name="Diffuse"),ParameterValue=Texture2D'"/Game/Objects/Textures/bottle_water_dif.bottle_water_dif"',ExpressionGUID=628E896E492D60A43D04D7AA3956AE52)
+   TextureParameterValues(1)=(ParameterName="Metallic",ParameterInfo=(Name="Metallic"),ParameterValue=Texture2D'"/Game/Objects/Textures/bottle_water_rough.bottle_water_rough"',ExpressionGUID=6BB62E8D491685F0397D04A21008A7CF)
+   TextureParameterValues(2)=(ParameterName="Normal map",ParameterInfo=(Name="Normal map"),ParameterValue=Texture2D'"/Game/Objects/Textures/bottle_water_norm.bottle_water_norm"',ExpressionGUID=D6AFAFE44DECFD77A6C387AEA430F002)
+   TextureParameterValues(3)=(ParameterName="Roughness",ParameterInfo=(Name="Roughness"),ParameterValue=Texture2D'"/Game/Objects/Textures/bottle_water_rough.bottle_water_rough"',ExpressionGUID=86C87D8B408FFD6950AC068E58257431)
+   ReferencedTextureGuids(0)=1DE8EA3444A8BA042764F386F86F3ABD
+   ReferencedTextureGuids(1)=20D26477496C65F61F3ECDA72AAB1582
+   ReferencedTextureGuids(2)=126E95114FD4752AFBA088944E76D176
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_4"'
+   LightingGuid=63FF119C44944B0F40CDA7AAC5C84C7D
+End Object
