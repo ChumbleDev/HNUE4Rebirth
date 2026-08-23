@@ -1,0 +1,47 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.4.1",
+	"FriendlyName": "JsonAsAsset",
+	"Description": "Powerful Unreal Engine Plugin that imports assets from FModel",
+	"Category": "Tools",
+	"CreatedBy": "JsonAsAsset",
+	"CreatedByURL": "https://github.com/JsonAsAsset",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "4.27.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "JsonAsAsset",
+			"Type": "Editor",
+			"LoadingPhase": "PostDefault"
+		},
+		{
+			"Name": "Detex",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "NVTT",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		},
+		{
+			"Name": "AudioModulation",
+			"Enabled": true
+		},
+		{
+			"Name": "PluginUtils",
+			"Enabled": true
+		}
+	]
+}
