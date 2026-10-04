@@ -15,7 +15,8 @@ public class ViperToolsEditor : ModuleRules
 			"Engine",
 			"UnrealEd",
 			"BlueprintGraph",
-			"Kismet"
+			"Kismet",
+			"AssetRegistry"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]

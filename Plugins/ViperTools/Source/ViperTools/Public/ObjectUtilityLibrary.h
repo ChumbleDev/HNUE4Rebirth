@@ -24,4 +24,13 @@ public:
 	 */
 	UFUNCTION(BlueprintPure, Category = "Viper Tools|Object Utility", meta = (DeterminesOutputType = "ObjectClass", DefaultToSelf = "Outer"))
 	static TArray<UObject*> GetInnerObjectsByClass(UObject* Outer, TSubclassOf<UObject> ObjectClass, bool bIncludeNestedSubobjects = true);
+
+	/**
+	 * Returns every currently active (i.e. not a class default object, not pending kill/garbage) UObject of ObjectClass or a subclass of it, anywhere in memory --
+	 * like GetAllActorsOfClass, but for any UObject type instead of just Actors in a World.
+	 *
+	 * @param ObjectClass	The class to search for. Determines the Blueprint return type.
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Viper Tools|Object Utility", meta = (DeterminesOutputType = "ObjectClass"))
+	static TArray<UObject*> GetAllActiveObjectsOfClass(TSubclassOf<UObject> ObjectClass);
 };

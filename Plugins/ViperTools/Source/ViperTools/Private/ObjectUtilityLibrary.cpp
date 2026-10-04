@@ -28,3 +28,16 @@ TArray<UObject*> UObjectUtilityLibrary::GetInnerObjectsByClass(UObject* Outer, T
 
 	return Result;
 }
+
+TArray<UObject*> UObjectUtilityLibrary::GetAllActiveObjectsOfClass(TSubclassOf<UObject> ObjectClass)
+{
+	TArray<UObject*> Result;
+
+	const UClass* FilterClass = ObjectClass ? ObjectClass.Get() : UObject::StaticClass();
+
+	// ExcludeFlags skips class default objects; ExclusionInternalFlags skips objects already marked
+	// pending kill/garbage, leaving only genuinely "active" live instances.
+	GetObjectsOfClass(FilterClass, Result, /*bIncludeDerivedClasses*/ true, RF_ClassDefaultObject, EInternalObjectFlags::PendingKill);
+
+	return Result;
+}
