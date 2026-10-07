@@ -23,7 +23,9 @@ public class ViperToolsEditor : ModuleRules
 		{
 			"Slate",
 			"SlateCore",
-			"EditorStyle"
+			"EditorStyle",
+			"PropertyEditor",
+			"WorkspaceMenuStructure"
 		});
 	}
 }
